@@ -1,0 +1,27 @@
+﻿@model CollegeManagementSystem.Models.User
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<link href="~/Content/style.css" rel="stylesheet" />
+
+<h2>Please, enter your login information:</h2>
+<div class="limiter">
+    <div class="container-login100">
+        @using (Html.BeginForm("Index", "College", FormMethod.Post))
+        {
+        <div class="form-group">
+            <label for="Passenger.FirstName">First name</label>
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+            <label for="Passenger.LastName">Last name</label>
+            @Html.TextBoxFor(m => m.Password, new { @class = "form-control" })
+        </div>
+
+           
+
+
+            <input style="width:80%" id="Submit" class="btn btn-danger wrn-btn" type="submit" value="submit" />
+        }
+    </div>
+</div>
+

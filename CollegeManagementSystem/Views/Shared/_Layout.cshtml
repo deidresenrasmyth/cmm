@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+    </style>        
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="~/">
+                    <img src="~/Content/Images/lift.jpg" height="50">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Registration System</a></li>
+                    <li><a href="~/">Exit</></a></li>
+                    <li>@Html.ActionLink("Create new student", "Create", "College")</li>
+                    
+                </ul>
+                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="~/"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <div class="row">
+
+              @RenderBody()
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="container-fluid text-center">
+            <div class="row hide_desktop space80"></div>
+            <div class="row  space80"></div>
+            <div class="row  space80">
+            </div>
+            <div class="banner_image">
+
+                <!-- BANNER -->
+                <section class="banner black_bg no_padding_bottom">
+                    <div class="container">
+
+                        <!-- ROW -->
+                        <div class="row first last">
+
+                            <div class="span12 cols centered text_center first last">
+
+                                <h1 class="threeem">Contact</h1>
+
+                            </div>
+
+                        </div>
+                        <!--// ROW -->
+
+                    </div>
+                </section>
+                <!--// BANNER -->
+
+            </div>
+            <div class="row  space80">
+            </div>
+            <div class="row  ">
+                <div class="row  ">
+                    <div class="full">
+                        <div class="col-md-12">
+                            <div class="container">
+                                <div class="col-md-6">
+
+
+                                    <div class="tweet">
+
+                                        <div class="white">The office is located in Toronto, ON</div>
+                                        <div class="white">Young Street</div>
+                                        <div class="white">10th floor</div>
+
+                                        <i class="fa fa-twitter">
+                                            <img src="http://www.jjservicios.com.co/index/images/earth.png" alt="Location" class="transparent">
+                                        </i>
+                                    </div>
+                                    <br>
+                                    <div class="tweet">
+
+                                        <div class="white">Monday to Frieday 9 am to 6pm</div>
+                                        <div class="white">Saturday de 8:30 am to 12:30 pm</div>
+
+                                        <i class="fa fa-twitter">
+                                            <img src="http://www.jjservicios.com.co/index/images/time.png" alt="Location" class="transparent">
+                                        </i>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-md-6">
+
+
+
+
+                                    <div class="tweet">
+
+                                        <div class="white">123456789</div>
+                                        <div class="white">(1) 1234567</div>
+
+                                        <i class="fa fa-twitter">
+                                            <img src="http://www.campings.net/images/ico-telefono.png" alt="http://www.campings.net/images/ico-telefono.png" class="transparent">
+                                        </i>
+                                    </div>
+
+                                    <div class="tweet">
+
+                                        <div class="white" style="margin-top: 3px; padding-top: 9px;">
+                                            <a href="mailto:contacto@jjservicios.com.co">contact@abcd.com.ca</a>
+                                        </div>
+
+
+                                        <i class="fa fa-twitter">
+                                            <img width="50" height="50" src="http://camda.com.mx/wp-content/uploads/2014/06/correo-camda-3.png" style="-webkit-user-select: none; cursor: zoom-in;">
+                                        </i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row space10"></div>
+                            <div class="row">
+                            </div>
+
+                            <div class=" space80"></div>
+                        </div>
+                    </div>
+                    <div class=" hide_mobile space80"></div>
+                    <div class="hide_mobile space80"></div>
+                </div>
+            </div>
+
+    </footer>
+
+
+
+</body>
+</html>
